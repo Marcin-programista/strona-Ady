@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moja Pierwsza Strona</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="#" onclick="pokazZakladke('home')">Strona główna</a></li>
+            <li><a href="#" onclick="pokazZakladke('about')">O nas</a></li>
+            <li><a href="#" onclick="pokazZakladke('contact')">Kontakt</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="home" class="tab">
+            <h1>Adrianna wita! Lekarz z ok!</h1>
+            <p>Wychodze i wchodze!</p>
+            <button onclick="powitanie()">Hej Kochani!</button>
+        </section>
+
+        <section id="about" class="tab" style="display: none;">
+            <h1>O mnie</h1>
+            <p>Absolwent Gdańskiego Uniwersytetu Medycznego, dr Jan Kowalski to młody lekarz z pasją do psychiatrii i nowoczesnego podejścia do zdrowia psychicznego. Ukończył studia medyczne z wyróżnieniem, a swoje zainteresowania kliniczne rozwijał już w czasie studiów, biorąc aktywny udział w konferencjach naukowych i stażach w renomowanych ośrodkach psychiatrycznych.
+
+Obecnie odbywa specjalizację z psychiatrii, skupiając się na leczeniu zaburzeń nastroju, lękowych oraz wczesnej interwencji psychotycznej. W swojej pracy łączy aktualną wiedzę medyczną z empatycznym podejściem do pacjenta. Zwraca szczególną uwagę na budowanie relacji terapeutycznej opartej na zaufaniu i zrozumieniu.
+
+Interesuje się również wpływem stylu życia na zdrowie psychiczne oraz rolą psychoterapii w leczeniu zaburzeń psychicznych. Stale poszerza swoją wiedzę, uczestnicząc w kursach i szkoleniach, a także śledząc najnowsze wytyczne Polskiego Towarzystwa Psychiatrycznego i międzynarodowych organizacji.
+
+Prywatnie miłośnik literatury psychologicznej, sportu i dobrego kina.</p>
+        </section>
+
+        <section id="contact" class="tab" style="display: none;">
+            <h1>Kontakt</h1>
+            <p>Możesz się z nami skontaktować pod adresem <strong>kontakt@moja-strona.pl</strong>.</p>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
